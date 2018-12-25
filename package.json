@@ -1,0 +1,33 @@
+{
+  "name": "invictusrp",
+  "productName": "InvictusRP-CAD",
+  "version": "0.0.1",
+  "description": "The Electron based CAD System for InvictusRP.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . --out=release-builds/dist/win --platform=win32 --arch=x64 --icon=images/icon.ico --asar=true --overwrite",
+    "setup": "electron-installer-windows --src dist/win/invictusrp-win32-x64/ --config config.json",
+    "final": "npm run build && npm run setup"
+  },
+  "homepage": "https://github.com/JackKellyBayliss/InvictusRP-Cad",
+  "repository": "https://github.com/JackKellyBayliss/InvictusRP-Cad",
+  "keywords": [
+    "Electron",
+    "invictusrp",
+    "fivem",
+    "cad",
+    "magic"
+  ],
+  "author": {
+    "name": "Jack Hansen (Jack K-B)",
+    "email": "jackkellybayliss@pm.me",
+    "url": "https://github.com/JackKellyBayliss"
+  },
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^3.0.7",
+    "electron-packager": "^13.0.1",
+    "electron-winstaller": "^2.7.0"
+  }
+}
