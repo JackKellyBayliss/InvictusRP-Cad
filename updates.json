@@ -1,0 +1,8 @@
+{
+  "win32-x64-prod": {
+    "readme": "First release",
+    "update": "https://github.com/JackKellyBayliss/InvictusRP-Cad/releases/download/0.1/InvictusRP-CAD-win32-x64.zip",
+    "install": "",
+    "version": "0.1"
+  }
+}
